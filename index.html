@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- for Google -->
+  <meta name="description" content="Animated Mosaic Plot" />
+  <meta name="keywords" content="visualization, mosaic, marimekko, animation, d3" />
+  <meta name="author" content="Puripant Ruchikachorn" />
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="Animated Mosaic Plot" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://puripant.ruchikachorn.com/animated-mosaic/thumbnail.png" />
+  <meta property="og:url" content="http://puripant.ruchikachorn.com/animated-mosaic/" />
+  <meta property="og:description" content="Animating between horizontal and vertical mosaic (Marimekko) plots" />
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Animated Mosaic Plot" />
+  <meta name="twitter:description" content="Animating between horizontal and vertical mosaic (Marimekko) plots" />
+  <meta name="twitter:image" content="http://puripant.ruchikachorn.com/animated-mosaic/thumbnail.png" />
+
+  <title>Animated Mosaic Plot</title>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+</head>
+
+<body>
+  <div id=title><h2>Animated</h2><h1>Mosaic</h1><h3>(Marimekko) Plot</h3></div>
+  <div id="project-button-default" class="button noselect highlighted" onclick="project_along('default')">No split</div>
+  <div id="project-button-x" class="button noselect" onclick="project_along('x')">Split along x axis first</div>
+  <div id="project-button-y" class="button noselect" onclick="project_along('y')">Split along y axis first</div>
+  <div id="chart">
+  </div>
+  
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script> -->
+  <script src="main.js"></script>
+</body>
+</html>
